@@ -1,1 +1,1 @@
-# Healing Reacipes Next.js App
+# Healing Recipes Next.js App
