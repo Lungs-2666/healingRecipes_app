@@ -32,14 +32,12 @@
                     </nav>
 
                     <div className={styles.main_content}>
-                      <section className={styles.main_sect_1}>
                         <h1> Unlock Your Health Secrets </h1>
                         <h4> Natural Remedies Await </h4>
 
-                        <button className={styles.start_btn}>
-                          Start
+                        <button className={`${styles.start_btn} ${noto_serif_display.className}`}>
+                          Search
                         </button>
-                      </section>
                     </div>
 
                     
