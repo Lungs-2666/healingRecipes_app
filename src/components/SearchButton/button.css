@@ -1,0 +1,29 @@
+    .start_btn{
+        width: 150px;
+        height: 40px;
+        border: 1px solid #b1b1b1;
+        background-color: rgba(255, 255, 255, 0.11);
+        backdrop-filter: blur(1px);
+        color: white;
+        cursor: pointer;
+        border-radius: 50px;
+        margin-top: 50px;
+        font-size: 1rem;
+        transition: all .1s ease;
+        animation: Opacity 1 2s ease forwards;
+        animation-delay: 1.6s;
+        opacity: 0;
+
+            &:active{
+                border: 1px solid #383838;
+                color: #383838;
+            }
+    }
+
+    @keyframes Opacity{
+        from {
+            opacity: 0;
+        } to {
+            opacity: 1;
+        }
+    }
