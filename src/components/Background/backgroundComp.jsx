@@ -15,7 +15,7 @@
                     distortion={0}
                     className="custom-rays"
                     pulsating={false}
-                    fadeDistance={1}
+                    fadeDistance={3}
                     saturation={3}
                 />
             </div>

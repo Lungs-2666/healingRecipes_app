@@ -1,0 +1,27 @@
+    .recipe_card_box{
+        width: 500px;
+        height: 700px;
+        background-color: rgba(0, 0, 0, 0.377);
+        backdrop-filter: blur(100px);
+        position: fixed;
+        margin-top: 65px;
+        right: 165px;
+        border-radius: 15px;
+        transform: translateX(100%);
+        border: 1px solid rgba(255, 255, 255, 0.459);
+        animation: FromRight 1 2s ease forwards;
+    }
+
+
+
+    /* Animations */
+
+    
+
+    @keyframes FromRight{
+        from {
+            transform: translateX(100%);
+        } to {
+            transform: translateX(0);
+        }
+    }

@@ -1,0 +1,79 @@
+.recipe_list{
+    width: 550px;
+    height: 700px;
+    position: fixed;
+    margin-top: 65px;
+    left: 165px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    transform: translateX(-100%);
+    padding-right: 12px;
+    animation: FromLeft 1 2s ease forwards;
+}
+
+.list_scroll{
+    flex: 1;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    direction: rtl;
+    padding-right: 12px;
+}
+
+.list_scroll::-webkit-scrollbar {
+    width: 8px;
+}
+
+.list_scroll::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.list_scroll::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.5);
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+}
+
+.list_item{
+    width: 80%;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.11);
+    backdrop-filter: blur(1px);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0px 30px;
+    cursor: pointer;
+    transition: all .2s ease;
+    flex-shrink: 0;
+    margin-right: auto;
+    direction: rtl;
+    border: 1px solid rgba(255, 255, 255, 0.185);
+    transform: translateX(20px);
+
+        &:hover{
+            opacity: .8;
+            /* transform: translateX(10px); */
+        }
+}
+
+
+/* Animations */
+
+@keyframes FromLeft{
+    from {
+        transform: translateX(-100%);
+    } to {
+        transform: translateX(0);
+    }
+}

@@ -2,7 +2,6 @@
     
     import styles from '@/components/GreetingPage/greeting.module.css';
     import { Activity } from 'lucide-react';
-    import { useState } from 'react';
 
     import SearchButton from '../SearchButton/button';
 
