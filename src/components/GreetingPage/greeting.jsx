@@ -1,9 +1,14 @@
+    'use client'
+    
     import styles from '@/components/GreetingPage/greeting.module.css';
     import { Activity } from 'lucide-react';
+    import { useState } from 'react';
 
     import SearchButton from '../SearchButton/button';
 
-    const GreetingPage = () => {
+    const GreetingPage = ( props ) => {
+        const { onStart } = props;
+        
         return (
             <div className={styles.greeting_page}>
                 <nav className={styles.nav_bar}>
@@ -26,7 +31,7 @@
                     <h1> Unlock Your Health Secrets </h1>
                     <h4> Natural Remedies Await </h4>
 
-                    <SearchButton />
+                    <SearchButton fn={onStart} />
                 </div>
             </div>
         )

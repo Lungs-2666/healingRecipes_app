@@ -1,0 +1,40 @@
+    .search_box{
+        width: 650px;
+        height: 65px;
+        background-color: rgba(255, 255, 255, 0.11);
+        backdrop-filter: blur(1px);
+        border: 1px solid #b1b1b186;
+        border-radius: 50px;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 30px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .search_inp{
+        width: 85%;
+        height: 50%;
+        background: none;
+        border: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.363);
+        outline: none;
+        color: white;
+        font-size: 1rem;
+    }
+
+    .search_btn{
+        width: 15%;
+        height: 100%;
+        background: none;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        transition: all .2s ease;
+
+            &:hover{
+                transform: scale(1.2);
+            }
+    }
