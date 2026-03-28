@@ -7,9 +7,9 @@
         margin-top: 65px;
         right: 165px;
         border-radius: 15px;
-        transform: translateX(100%);
         border: 1px solid rgba(255, 255, 255, 0.459);
-        animation: FromRight 1 2s ease forwards;
+        animation: Opacity 1 2s ease forwards;
+        opacity: 0;
     }
 
 
@@ -18,10 +18,10 @@
 
     
 
-    @keyframes FromRight{
+    @keyframes Opacity{
         from {
-            transform: translateX(100%);
+            opacity: 0;
         } to {
-            transform: translateX(0);
+            opacity: 1;
         }
     }

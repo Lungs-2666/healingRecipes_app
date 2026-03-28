@@ -9,9 +9,9 @@
     align-items: flex-start;
     justify-content: space-between;
     gap: 20px;
-    transform: translateX(-100%);
     padding-right: 12px;
-    animation: FromLeft 1 2s ease forwards;
+    animation: Opacity 1 2s ease forwards;
+    opacity: 0;
 }
 
 .list_scroll{
@@ -63,6 +63,7 @@
 
         &:hover{
             opacity: .8;
+            border: 1px solid white;
             /* transform: translateX(10px); */
         }
 }
@@ -70,10 +71,10 @@
 
 /* Animations */
 
-@keyframes FromLeft{
+@keyframes Opacity{
     from {
-        transform: translateX(-100%);
+        opacity: 0;
     } to {
-        transform: translateX(0);
+        opacity: 1;
     }
 }

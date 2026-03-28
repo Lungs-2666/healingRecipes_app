@@ -2,6 +2,10 @@
     import { remedies } from '@/data/data';
     
     const RecipeList = () => {
+        function selectItem(){
+            
+        }
+
         return (
             <form className='recipe_list'>
                 <div className='list_scroll'>
